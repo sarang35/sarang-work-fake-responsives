@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+    color: #444444;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "inter",sans-serif;
+    font-weight: 600px;
+}
+
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+}
+#banner{
+    width: 100%;
+    object-fit: cover;
+}
+
+.location{
+    color: gray;
+    margin-bottom: 16px;
+}
+#NAVBAR{
+    padding: 8px;
+    margin: 0px;
+}
+
+#about {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description{
+    width: 50%;
+    font-size: 1.15rem;
+    padding: 8px;
+    padding-right: 8px;
+}
+
+#team{
+    width: 50%;
+}
+
+#team-image{
+    border-radius: 5px;
+
+    width: 100%;
+}
+
+#logo{
+    height: 32px;
+}
+h2{
+    text-align: center;
+}
+
+#application{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 8px;
+}
+
+#application-form div {
+    margin-top: 8px;
+}
+
+
+#application-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#application-form input{
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+}
+
+#jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+
+h3{
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.apply{
+    float: right;
+}
+
+
+#footer{
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#footer-links{
+    list-style: none;
+}
+
+#footer-links li {
+    display: inline;
+    margin: 0 16px;
+}
+
+.copyright{
+    color: gray;
+    font-size: 0.825rem;
+}
+
+
+#jobs-table{
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.jobs-header-row th{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+
+
+#jobs-table tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+
+.jobs-data-row td{
+    border-right: 1px solid gray;
+    padding: 8px;
+}
