@@ -1,4 +1,274 @@
+html{
+    font-size: 14px;
+
+}
 body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+    color: #444444;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "inter",sans-serif;
+    font-weight: 600px;
+}
+
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+a{
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #1854b5;
+}
+
+#navbar{
+    padding: 8px;
+    margin: 0px;
+    
+}
+
+#logo-with-text{
+    display: none;
+}
+#logo-with-text , #logo{
+    height: 50px;
+}
+
+#banner{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin: 12px 0;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description{
+    font-size: 1.25rem;
+    
+}
+
+#team-image{
+    border-radius: 5px;
+
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+#jobs{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#joblist{
+    display:block;
+}
+#jobs-table{
+    display: none;
+}
+
+.job{
+    border: 1px solid #dddddd;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.job:focus , .job:hover{
+    border: 4px solid black;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #222222;
+}
+.job-detail{
+    margin-top: 4px;
+    color: #555555;
+}
+#application{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0px 8px;
+}
+
+#application-form div {
+    margin-top: 8px;
+}
+
+
+#application-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#application-form input{
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+}
+
+#application-form input , select {
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border:1px solid gray;
+    width: 90%;
+    
+}
+#application-form input[type="textarea"]{
+    width: 80%;
+    height: 80px;
+}
+#application-form input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+}
+
+#application-form input[type='submit']{
+    background-color: #35bd1a;
+    color: white;
+    border:1px solid black
+}
+
+#application-form input[type='submit']:hover{
+    background-color: white;
+    color: #35bd1a;
+    border:1px solid black
+}
+
+
+#footer{
+    background-color: ghostwhite;
+    padding: 8px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#footer-links{
+    list-style: none;
+    padding: 0px;
+}
+
+#footer-links li {
+    display: block;
+    margin: 4px 16px;
+}
+
+.copyright{
+    color: gray;
+    font-size: 0.825rem;
+}
+
+/*for tablet*/
+@media screen and (min-width:576px) {
+    html{
+        font-size: 16px;
+    }
+    #logo-with-text{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    #banner{
+        height: 200px;
+    }
+    h1{
+        margin: 16px 0 ;
+    }
+    #application-form input , select , textarea{
+        width: auto;
+    }
+    #footer-links li {
+        display: inline;
+    }
+}
+
+/* for laptop */
+@media screen and (min-width:768px){
+    #banner{
+        height: 250px;
+    }
+    h1{
+        margin: 20px 0;
+    }
+
+    #about{
+        max-width: 800px;
+        flex-direction: row;
+    }
+    #description{
+        width: 50%;
+        padding-right: 8px;
+    }
+    #team{
+        width: 50%;
+    }
+    #jobs{
+        min-width:800px;
+    }
+    #joblist{
+        display:none;
+    }
+    #jobs-table{
+        display:table;
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .jobs-header-row th{
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: aliceblue;
+        text-align: center;
+    }
+    
+    
+    
+    #jobs-table tr:nth-child(odd){
+        background-color: antiquewhite;
+    }
+    
+    
+    .jobs-data-row td{
+        border-right: 1px solid gray;
+        padding: 8px;
+    } 
+    #application{
+        max-width:800px
+    }
+}
+
+/* for desktop */
+@media screen and (min-width:992px) {
+    
+}
+
+/* body{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto',sans-serif;
@@ -42,29 +312,12 @@ h1{
     margin: 0px;
 }
 
-#about {
-    display: flex;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 8px;
-}
 
-#description{
-    width: 50%;
-    font-size: 1.15rem;
-    padding: 8px;
-    padding-right: 8px;
-}
 
-#team{
-    width: 50%;
-}
 
-#team-image{
-    border-radius: 5px;
 
-    width: 100%;
-}
+
+
 
 #logo{
     height: 32px;
@@ -96,9 +349,7 @@ h2{
 }
 
 #jobs {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 8px;
+
 }
 
 
@@ -112,26 +363,7 @@ h3{
 }
 
 
-#footer{
-    background-color: ghostwhite;
-    padding: 8px;
-    margin-top: 16px;
-    text-align: center;
-}
 
-#footer-links{
-    list-style: none;
-}
-
-#footer-links li {
-    display: inline;
-    margin: 0 16px;
-}
-
-.copyright{
-    color: gray;
-    font-size: 0.825rem;
-}
 
 
 #jobs-table{
@@ -140,21 +372,4 @@ h3{
     border-collapse: collapse;
 }
 
-.jobs-header-row th{
-    border: 1px solid gray;
-    padding: 8px;
-    background-color: aliceblue;
-    text-align: center;
-}
-
-
-
-#jobs-table tr:nth-child(odd){
-    background-color: antiquewhite;
-}
-
-
-.jobs-data-row td{
-    border-right: 1px solid gray;
-    padding: 8px;
-}
+*/
